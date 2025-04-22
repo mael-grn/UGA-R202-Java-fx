@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="269.0" prefWidth="371.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tp01.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <Label text="Exemple de Code Java pur" textAlignment="CENTER" textFill="#9c0000">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TextField promptText="Saisir texte" />
+      <Button mnemonicParsing="false" text="Compris !">
+         <effect>
+            <InnerShadow radius="6.49" width="6.96">
+               <color>
+                  <Color green="0.5666666626930237" blue="1.0" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+      <HBox alignment="CENTER" mouseTransparent="false" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <RadioButton mnemonicParsing="false" prefHeight="18.0" prefWidth="66.0" selected="true" text="javaFX">
+               <toggleGroup>
+                  <ToggleGroup fx:id="group" />
+               </toggleGroup></RadioButton>
+            <RadioButton mnemonicParsing="false" prefHeight="18.0" prefWidth="64.0" text="Swing" toggleGroup="$group" />
+            <RadioButton mnemonicParsing="false" text="Autre" toggleGroup="$group" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

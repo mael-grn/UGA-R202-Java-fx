@@ -1,0 +1,10 @@
+Label{
+    -fx-font-family: Verdana Bold;
+    -fx-font-size: 20;
+}
+Button{
+    -fx-background-color: black;
+    -fx-text-fill: white;
+
+
+}
